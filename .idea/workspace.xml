@@ -18,14 +18,16 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="1d1gSqyJHj4sCNaxC7HSpr668K6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Sperimenti" />
+    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -64,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1591598015951</updated>
       <workItem from="1591598022125" duration="271000" />
-      <workItem from="1591598313054" duration="17016000" />
+      <workItem from="1591598313054" duration="17764000" />
     </task>
     <servers />
   </component>
