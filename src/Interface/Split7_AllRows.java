@@ -9,9 +9,11 @@ public class Split7_AllRows extends JPanel {
     Split3_SplitInKB r3=new Split3_SplitInKB();
     Split4_SplitandCrypt r4=new Split4_SplitandCrypt();
     Split5_SplitInNumberOfParts r5=new Split5_SplitInNumberOfParts();
-    Split6_AddToQueueButton r6=new Split6_AddToQueueButton();
+    Split6_AddToQueueButton r6;
 
-    public Split7_AllRows(){
+    public Split7_AllRows(FinalGui2_JTable T){
+        r6 = new Split6_AddToQueueButton(T);
+
         SplitRows=new JPanel();
         SplitRows.setLayout(new BoxLayout(SplitRows,BoxLayout.PAGE_AXIS));
         SplitRows.add(r1);
