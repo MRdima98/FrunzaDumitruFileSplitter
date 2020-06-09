@@ -1,10 +1,12 @@
 import Interface.FinalGui;
+import Interface.FinalGui2_JTable;
 
 import javax.swing.*;
 
 public class frame extends JFrame {
 
     public static void main(String[] args){
+
 
         JFrame frame=new JFrame();
         FinalGui GUI=new FinalGui();
