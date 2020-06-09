@@ -11,8 +11,13 @@ public class Split6_AddToQueueButton extends JPanel {
     SplitAddToQueueListener SL;
 
 
+
     public Split6_AddToQueueButton(FinalGui2_JTable T){
         SL=new SplitAddToQueueListener(T);
+
+    public Split6_AddToQueueButton(FinalGui2_JTable T){
+        SL = new SplitAddToQueueListener(T);
+
         SplitRow7=new JPanel();
         AddToQueue=new JButton("Add to queue");
         AddToQueue.addActionListener(SL);

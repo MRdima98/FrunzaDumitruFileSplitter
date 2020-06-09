@@ -4,8 +4,9 @@ import javax.swing.*;
 
 public class FinalGui extends JPanel {
 
-    public JPanel GUI;
+    private JPanel GUI;
     FinalGui1_SplitAndMergeRow SM;
+
     FinalGui2_JTable T;
     FinalGui3_StartAndStop SS;
     public FinalGui(){
@@ -13,6 +14,11 @@ public class FinalGui extends JPanel {
         T=new FinalGui2_JTable();
         SS=new FinalGui3_StartAndStop();
 
+    FinalGui2_JTable T=new FinalGui2_JTable();
+    FinalGui3_StartAndStop SS=new FinalGui3_StartAndStop();
+
+    public FinalGui(FinalGui2_JTable T){
+        SM = new FinalGui1_SplitAndMergeRow(T);
         GUI=new JPanel();
         GUI.setLayout(new BoxLayout(GUI,BoxLayout.PAGE_AXIS));
         GUI.add(SM);
