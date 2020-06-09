@@ -15,8 +15,8 @@ public class Merge4_AllRows extends JPanel {
         MergeRows.setLayout(new BoxLayout(MergeRows,BoxLayout.PAGE_AXIS));
         MergeRows.add(r1);
         MergeRows.add(r2);
-        MergeRows.add(r3);
         MergeRows.add(Box.createRigidArea(new Dimension(0,94)));
+        MergeRows.add(r3);
         add(MergeRows);
     }
 

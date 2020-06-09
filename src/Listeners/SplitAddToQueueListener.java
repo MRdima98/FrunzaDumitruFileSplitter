@@ -7,13 +7,16 @@ import java.awt.event.ActionListener;
 
 public class SplitAddToQueueListener implements ActionListener {
 
-    FinalGui2_JTable T=new FinalGui2_JTable();
+
+    private FinalGui2_JTable T;
+
+    public SplitAddToQueueListener(FinalGui2_JTable T){
+        this.T=T;
+    }
     @Override
     public void actionPerformed(ActionEvent e) {
-        if(e.getActionCommand().equals("Add to queue")){
+        if(e.getActionCommand().equals("Add to queue"))
             T.AddRow();
-            System.out.println("Prova");
-        }
 
     }
 
