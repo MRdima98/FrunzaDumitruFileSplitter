@@ -1,6 +1,6 @@
 package Interface;
 
-import Listeners.FileChooserListener;
+import Listeners.SplitFileChooserListener;
 
 
 
@@ -12,7 +12,7 @@ public class Split2_FileChooser extends JPanel {
     private JButton Choose;
     private JTextField Blank;
 
-    FileChooserListener FC=new FileChooserListener();
+    SplitFileChooserListener FC=new SplitFileChooserListener();
 
     public Split2_FileChooser(){
         SplitRow2=new JPanel();
