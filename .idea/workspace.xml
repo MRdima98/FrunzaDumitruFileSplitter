@@ -2,25 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70a1d02a-b70f-477b-9a79-1ac27a9d95f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Listeners/MergeAddToQueueListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Listeners/SplitFileChooserListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Listeners/MergeFileChooserListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Interface/FinalGui1_SplitAndMergeRow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Interface/FinalGui1_SplitAndMergeRow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Interface/FinalGui2_JTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Interface/FinalGui2_JTable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Interface/Merge3_AddToQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Interface/Merge3_AddToQueue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Interface/Merge4_AllRows.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Interface/Merge4_AllRows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Interface/Split2_FileChooser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Interface/Split2_FileChooser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Interface/Split7_AllRows.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Interface/Split7_AllRows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Listeners/FileChooserListener.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Listeners/SplitAddToQueueListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Listeners/SplitAddToQueueListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/FinalGui1_SplitAndMergeRow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/FinalGui1_SplitAndMergeRow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/FinalGui2_JTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/FinalGui2_JTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/Merge3_AddToQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/Merge3_AddToQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/Merge4_AllRows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/Merge4_AllRows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/Split2_FileChooser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/Split2_FileChooser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/Split7_AllRows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/Split7_AllRows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Listeners/FileChooserListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/Merge2_ChooseFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/Merge2_ChooseFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Listeners/MergeAddToQueueListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Listeners/MergeAddToQueueListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Listeners/SplitAddToQueueListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Listeners/SplitAddToQueueListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Listeners/SplitFileChooserListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Listeners/SplitFileChooserListener.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +75,8 @@
       <updated>1591598015951</updated>
       <workItem from="1591598022125" duration="271000" />
       <workItem from="1591598313054" duration="27329000" />
-      <workItem from="1591779669273" duration="2893000" />
+      <workItem from="1591779669273" duration="5813000" />
+      <workItem from="1591864735260" duration="4430000" />
     </task>
     <servers />
   </component>

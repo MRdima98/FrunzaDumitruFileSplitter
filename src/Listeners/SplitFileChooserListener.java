@@ -1,5 +1,7 @@
 package Listeners;
 
+import Interface.FinalGui2_JTable;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -7,39 +9,31 @@ import java.io.File;
 
 public class SplitFileChooserListener extends JPanel implements ActionListener {
 
-    private String path;
     private JFileChooser fileChooser;
-    private long fileDim;
-    private File myFile;
+    private static File splitFile;
+
 
     public SplitFileChooserListener(){
         fileChooser =new JFileChooser();
-        fileChooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
+        fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
 
     }
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getActionCommand().equals("Choose File")){
             int returnVal= fileChooser.showOpenDialog(SplitFileChooserListener.this);
-            myFile=fileChooser.getSelectedFile();
-            setFileDim(myFile.length());
-            setFilePath(myFile.getAbsolutePath());
+            if(returnVal==JFileChooser.APPROVE_OPTION) {
+                splitFile=fileChooser.getSelectedFile();
+            }
         }
     }
 
-    public void setFilePath(String p){
-        path=p;
-    }
-
-    public void setFileDim(long fileDim){
-        this.fileDim=fileDim;
-    }
-
     public String getFilePath(){
-        return path;
+        return splitFile.getAbsolutePath();
     }
 
     public long getFileDim(){
-        return fileDim;
+        return splitFile.length();
     }
+
 }
