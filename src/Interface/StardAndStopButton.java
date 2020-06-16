@@ -3,13 +3,13 @@ package Interface;
 import javax.swing.*;
 import java.awt.*;
 
-public class FinalGui3_StartAndStop extends JPanel {
+public class StardAndStopButton extends JPanel {
 
     private JPanel StartAndStopRow;
     private JButton Start;
     private JButton Stop;
 
-    public FinalGui3_StartAndStop(){
+    public StardAndStopButton(){
 
         StartAndStopRow=new JPanel();
         StartAndStopRow.setLayout(new BoxLayout(StartAndStopRow,BoxLayout.LINE_AXIS));

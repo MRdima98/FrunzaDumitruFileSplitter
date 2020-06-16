@@ -5,14 +5,14 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 
 
-public class FinalGui2_JTable extends JPanel {
+public class JTableGui extends JPanel {
 
     public JTable table;
     public DefaultTableModel model;
     private JScrollPane scrollPane;
 
 
-    public FinalGui2_JTable(){
+    public JTableGui(){
 
         model=new DefaultTableModel(new Object[]{"Type","Dimension","Path","Progress"},0);
 
@@ -22,14 +22,6 @@ public class FinalGui2_JTable extends JPanel {
         add(scrollPane);
     }
 
-    public void AddRow(Object[] object){model.addRow(object);}
-
-    public void AddMergeRow(){
-        model.addRow(new Object[]{"Merge","","",""});
-    }
-
-    public void AddSplitRow(){
-        model.addRow(new Object[]{"Split","","",""});
-    }
+    public void addRow(Object[] object){model.addRow(object);}
 
 }
