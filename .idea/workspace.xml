@@ -2,46 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70a1d02a-b70f-477b-9a79-1ac27a9d95f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Interface/SplitAndMergeGui.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Logic/Split.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Logic/SplitByKb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Interface/FinalGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Interface/FinalGui.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Interface/FinalGui1_SplitAndMergeRow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Interface/FinalGui2_JTable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Interface/FinalGui3_StartAndStop.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Interface/Merge1_Label.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Interface/Merge2_ChooseFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Interface/Merge3_AddToQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Interface/Merge4_AllRows.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Interface/Split1_Label.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Interface/Split2_FileChooser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Interface/Split3_SplitInKB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Interface/Split4_SplitandCrypt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Interface/Split5_SplitInNumberOfParts.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Interface/Split6_AddToQueueButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Interface/Split7_AllRows.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Listeners/SplitAddToQueueListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/frame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/frame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/FinalGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/FinalGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/FinalGui1_SplitAndMergeRow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/FinalGui2_JTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/JTableGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/FinalGui3_StartAndStop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/StardAndStopButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/Merge1_Label.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/Merge2_ChooseFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/Merge3_AddToQueue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/Merge4_AllRows.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/Split1_Label.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/Split2_FileChooser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/Split3_SplitInKB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/Split4_SplitandCrypt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/Split5_SplitInNumberOfParts.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/Split6_AddToQueueButton.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/Split7_AllRows.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Listeners/MergeAddToQueueListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Listeners/MergeFileChooserListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Listeners/SplitAddToQueueListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Listeners/SplitFileChooserListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/SplitAndMergeGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/SplitAndMergeGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/StardAndStopButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/StardAndStopButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/Split.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Split.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +36,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Progetto Esame" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
@@ -118,7 +83,10 @@
       <workItem from="1591946162131" duration="9205000" />
       <workItem from="1592068718310" duration="615000" />
       <workItem from="1592207488387" duration="7030000" />
-      <workItem from="1592288594433" duration="8839000" />
+      <workItem from="1592288594433" duration="10348000" />
+      <workItem from="1592351020950" duration="84000" />
+      <workItem from="1592382130810" duration="141000" />
+      <workItem from="1592382342250" duration="9666000" />
     </task>
     <servers />
   </component>
@@ -140,5 +108,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Logic/SplitByKb.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Logic/SplitByKb.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

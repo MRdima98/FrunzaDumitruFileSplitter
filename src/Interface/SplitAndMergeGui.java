@@ -6,6 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class SplitAndMergeGui extends JPanel implements ActionListener {
@@ -17,7 +18,7 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
     private JCheckBox inPartsCheckBox;
 
     private JPanel chooseFilePanel;
-    private JPanel checkBoxsPanel;
+    private JPanel checkBoxesPanel;
     private JPanel textFieldsPanel;
     private JPanel addToQueuePanel;
     private JPanel inKbLabelAndText;
@@ -41,19 +42,17 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
 
     private JFileChooser fileChooser;
     private File file;
-    private ArrayList filePathList;
-    private ArrayList fileInKbList;
-    private ArrayList fileKeysList;
-    private ArrayList filePartsList;
+    private static ArrayList<String> filePathListInKb;
+    private static ArrayList<String> filePathListCrypt;
+    private static ArrayList<String> filePathListInParts;
 
     public SplitAndMergeGui(JTableGui T){
 
         this.setLayout(new BorderLayout());
         this.T=T;
-        filePathList=new ArrayList();
-        fileInKbList=new ArrayList();
-        fileKeysList=new ArrayList();
-        filePartsList=new ArrayList();
+        filePathListInKb=new ArrayList<String>();
+        filePathListCrypt=new ArrayList<String>();
+        filePathListInParts=new ArrayList<String>();
 
         fileChooser=new JFileChooser();
         fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
@@ -61,8 +60,8 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
         splitAndMergePanel=new JPanel();
         splitAndMergePanel.setLayout(new BoxLayout(splitAndMergePanel,BoxLayout.PAGE_AXIS));
         chooseFilePanel=new JPanel();
-        checkBoxsPanel=new JPanel();
-        checkBoxsPanel.setLayout(new BoxLayout(checkBoxsPanel,BoxLayout.PAGE_AXIS));
+        checkBoxesPanel =new JPanel();
+        checkBoxesPanel.setLayout(new BoxLayout(checkBoxesPanel,BoxLayout.PAGE_AXIS));
         textFieldsPanel=new JPanel();
         textFieldsPanel.setLayout(new BoxLayout(textFieldsPanel,BoxLayout.PAGE_AXIS));
         addToQueuePanel=new JPanel();
@@ -82,9 +81,9 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
         inKbCheckBox.addActionListener(this);
         cryptCheckBox=new JCheckBox("Split and crypt");
         inPartsCheckBox=new JCheckBox("Split in parts");
-        checkBoxsPanel.add(inKbCheckBox);
-        checkBoxsPanel.add(cryptCheckBox);
-        checkBoxsPanel.add(inPartsCheckBox);
+        checkBoxesPanel.add(inKbCheckBox);
+        checkBoxesPanel.add(cryptCheckBox);
+        checkBoxesPanel.add(inPartsCheckBox);
 
         chooseFileButton=new JButton("Choose file");
         chooseFileButton.addActionListener(this);
@@ -117,7 +116,7 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
         addToQueuePanel.add(addToQueueButton);
 
         add(chooseFilePanel,BorderLayout.PAGE_START);
-        add(checkBoxsPanel,BorderLayout.CENTER);
+        add(checkBoxesPanel,BorderLayout.CENTER);
         add(textFieldsPanel,BorderLayout.LINE_END);
         add(addToQueuePanel,BorderLayout.PAGE_END);
         add(splitAndMergePanel,BorderLayout.LINE_START);
@@ -137,8 +136,8 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
 
         if(splitCheckBox.isSelected() & e.getSource().equals(addToQueueButton) & inKbCheckBox.isSelected()){
             T.addRow(new Object[]{"Split by kb",file.length(),file.getAbsolutePath(),""});
-            filePathList.add(file.getAbsoluteFile());
-            fileInKbList.add(Integer.parseInt(inKbText.getText()));
+            filePathListInKb.add(file.getAbsoluteFile().toString());
+            filePathListInKb.add(inKbText.getText());
             inKbText.setText("");
 
         }
@@ -146,16 +145,16 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
 
         if(splitCheckBox.isSelected() & cryptCheckBox.isSelected() & e.getSource().equals(addToQueueButton)){
             T.addRow(new Object[]{"Split and crypt",file.length(),file.getAbsolutePath(),""});
-            filePathList.add(file.getAbsoluteFile());
-            fileKeysList.add(cryptText.getText());
+            filePathListCrypt.add(file.getAbsoluteFile().toString());
+            filePathListCrypt.add(cryptText.getText());
             cryptText.setText("");
         }
 
 
         if(splitCheckBox.isSelected() & inPartsCheckBox.isSelected() & e.getSource().equals(addToQueueButton)){
             T.addRow(new Object[]{"Split in parts",file.length(),file.getAbsolutePath()});
-            filePathList.add(file.getAbsoluteFile());
-            filePartsList.add(Integer.parseInt(inPartsText.getText()));
+            filePathListInParts.add(file.getAbsoluteFile().toString());
+            filePathListInParts.add(inPartsText.getText());
             inPartsText.setText("");
         }
 
@@ -174,19 +173,5 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
         }
     }
 
-    public ArrayList getFilePathList() {
-        return filePathList;
-    }
-
-    public ArrayList getFileInKbList() {
-        return fileInKbList;
-    }
-
-    public ArrayList getFileKeysList(){
-        return fileKeysList;
-    }
-
-    public ArrayList getFilePartsList(){
-        return filePartsList;
-    }
+    public ArrayList<String> getFilePathListInKb(){return filePathListInKb;}
 }

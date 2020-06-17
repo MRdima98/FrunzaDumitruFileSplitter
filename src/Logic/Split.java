@@ -1,4 +1,11 @@
 package Logic;
 
-public class Split {
+public abstract class Split {
+
+    public Split(){
+    }
+
+    public void splitFile(){
+    }
+
 }
