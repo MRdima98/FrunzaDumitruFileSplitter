@@ -1,4 +1,8 @@
 package Logic;
 
-public class SplitAndCrypt {
+public class SplitAndCrypt extends Split{
+
+    public SplitAndCrypt(){
+
+    }
 }

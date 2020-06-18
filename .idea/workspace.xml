@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70a1d02a-b70f-477b-9a79-1ac27a9d95f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Logic/SplitByKb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Logic/SplitInParts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio2.m0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio2.m1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio2.m2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio2.m3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizio2.m4" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interface/SplitAndMergeGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/SplitAndMergeGui.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interface/StardAndStopButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/StardAndStopButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/Split.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Split.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/SplitAndCrypt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/SplitAndCrypt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/SplitByKb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/SplitByKb.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +92,8 @@
       <workItem from="1592288594433" duration="10348000" />
       <workItem from="1592351020950" duration="84000" />
       <workItem from="1592382130810" duration="141000" />
-      <workItem from="1592382342250" duration="9666000" />
+      <workItem from="1592382342250" duration="12622000" />
+      <workItem from="1592465832118" duration="4432000" />
     </task>
     <servers />
   </component>
@@ -113,14 +120,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Logic/SplitByKb.java</url>
-          <line>66</line>
-          <option name="timeStamp" value="17" />
+          <url>file://$PROJECT_DIR$/src/Logic/SplitInParts.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Logic/SplitByKb.java</url>
-          <line>68</line>
-          <option name="timeStamp" value="18" />
+          <url>file://$PROJECT_DIR$/src/Logic/SplitInParts.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Logic/SplitInParts.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
