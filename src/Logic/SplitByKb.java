@@ -5,7 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
 
-public class SplitByKb extends Split{
+public class SplitByKb{
 
     private String path;
     private File file;
@@ -15,6 +15,7 @@ public class SplitByKb extends Split{
     private FileInputStream inputStream;
     private FileOutputStream outputStream;
     private int lastIndex;
+    private int fileLenght;
 
     public SplitByKb(String path,int partsDim){
         this.partsDim=partsDim;
@@ -26,6 +27,7 @@ public class SplitByKb extends Split{
 
         try{
             file = new File(path);
+            partsDim=partsDim*1024;
             lastPartDim = Math.toIntExact(file.length() % partsDim);
             fileChunks = Math.toIntExact(file.length() / partsDim);
             byte[] buff = new byte[partsDim];
@@ -35,17 +37,20 @@ public class SplitByKb extends Split{
                     break;
                 }
                 inputStream.read(buff);
-                outputStream=new FileOutputStream(file.getName() + (j+1) + ".eqpar");
+                outputStream=new FileOutputStream(file.getName() + ".eqpar" + (j+1));
                 outputStream.write(buff);
                 lastIndex =j;
             }
-            outputStream=new FileOutputStream(file.getName() + (lastIndex +2) + ".eqpar");
-            outputStream.write(new byte[lastPartDim]);
+            outputStream=new FileOutputStream(file.getName() + ".eqpar" + (lastIndex +2));
+            byte[] lastBuff=new byte[lastPartDim];
+            inputStream.read(lastBuff);
+            outputStream.write(lastBuff);
             inputStream.close();
+            outputStream.close();
         }
 
         catch (Exception e){
-
+            e.printStackTrace();
         }
     }
 }

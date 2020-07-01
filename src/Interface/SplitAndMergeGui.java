@@ -28,6 +28,7 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
     private JLabel inKbLabel;
     private JLabel cryptLabel;
     private JLabel inPartsLabel;
+    private JLabel cryptDimLabel;
 
     private JButton chooseFileButton;
     private JButton addToQueueButton;
@@ -36,6 +37,7 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
     private JTextField cryptText;
     private JTextField inPartsText;
     private JTextField blank;
+    private JTextField cryptDimText;
 
     JTableGui T;
 
@@ -61,7 +63,7 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
         textFieldsPanel.setLayout(new BoxLayout(textFieldsPanel,BoxLayout.PAGE_AXIS));
         addToQueuePanel=new JPanel();
         inKbLabelAndText=new JPanel(new FlowLayout(0,10,0));
-        cryptLabelAndText=new JPanel(new FlowLayout(0,7,0));
+        cryptLabelAndText=new JPanel(new FlowLayout(0,10,0));
         inPartsLabelAndText=new JPanel(new FlowLayout(0,13,0));
 
 
@@ -95,6 +97,11 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
         cryptText=new JTextField(7);
         cryptText.addActionListener(this);
         cryptLabel=new JLabel("key");
+        cryptDimText=new JTextField(7);
+        cryptDimText.addActionListener(this);
+        cryptDimLabel=new JLabel("kb");
+        cryptLabelAndText.add(cryptDimLabel);
+        cryptLabelAndText.add(cryptDimText);
         cryptLabelAndText.add(cryptLabel);
         cryptLabelAndText.add(cryptText);
         inPartsText=new JTextField(7);
@@ -130,8 +137,8 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
             splitCheckBox.setEnabled(true);
 
         if(splitCheckBox.isSelected() & e.getSource().equals(addToQueueButton) & inKbCheckBox.isSelected()){
-            T.addRow(new Object[]{"Split by kb",file.length(),file.getAbsolutePath(),""});
-            filePathList.add("1");
+            T.addRow(new Object[]{"Split by kb",file.length()/1024 + " kb",file.getAbsolutePath(),""});
+            filePathList.add("SplitByKb");
             filePathList.add(file.getAbsoluteFile().toString());
             filePathList.add(inKbText.getText());
             inKbText.setText("");
@@ -140,17 +147,18 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
 
 
         if(splitCheckBox.isSelected() & cryptCheckBox.isSelected() & e.getSource().equals(addToQueueButton)){
-            T.addRow(new Object[]{"Split and crypt",file.length(),file.getAbsolutePath(),""});
-            filePathList.add("2");
+            T.addRow(new Object[]{"Split and crypt",file.length()/1024 + " kb",file.getAbsolutePath(),""});
+            filePathList.add("SplitAndCrypt");
             filePathList.add(file.getAbsoluteFile().toString());
             filePathList.add(cryptText.getText());
+            filePathList.add(cryptDimText.getText());
             cryptText.setText("");
         }
 
 
         if(splitCheckBox.isSelected() & inPartsCheckBox.isSelected() & e.getSource().equals(addToQueueButton)){
-            T.addRow(new Object[]{"Split in parts",file.length(),file.getAbsolutePath()});
-            filePathList.add("3");
+            T.addRow(new Object[]{"Split in parts",file.length()/1024 + " kb",file.getAbsolutePath()});
+            filePathList.add("SplitInParts");
             filePathList.add(file.getAbsoluteFile().toString());
             filePathList.add(inPartsText.getText());
             inPartsText.setText("");
@@ -158,7 +166,9 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
 
 
         if(mergeCheckBox.isSelected() & e.getSource().equals(addToQueueButton)){
-            T.addRow(new Object[]{"Merge",file.length(),file.getAbsolutePath(),""});
+            T.addRow(new Object[]{"Merge",file.length()/1024,file.getAbsolutePath(),""});
+            filePathList.add("Merge");
+            filePathList.add(file.getAbsoluteFile().toString());
         }
 
 
@@ -166,6 +176,7 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
             int returnVal=fileChooser.showOpenDialog(SplitAndMergeGui.this);
             if(returnVal==JFileChooser.APPROVE_OPTION){
                 file=fileChooser.getSelectedFile();
+
             }
 
         }

@@ -2,7 +2,7 @@ package Logic;
 
 import java.io.*;
 
-public class SplitInParts extends Split{
+public class SplitInParts{
 
 
     private String path;

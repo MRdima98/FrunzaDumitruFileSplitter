@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70a1d02a-b70f-477b-9a79-1ac27a9d95f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Logic/SplitInParts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Logic/GenerateCipher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Logic/MergeByKb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Esercizio2.m0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Esercizio2.m1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Esercizio2.m2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Esercizio2.m3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Esercizio2.m4" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interface/SplitAndMergeGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/SplitAndMergeGui.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interface/StardAndStopButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/StardAndStopButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/Split.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Logic/SplitAndCrypt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/SplitAndCrypt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Logic/SplitByKb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/SplitByKb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/SplitInParts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/SplitInParts.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,10 +38,15 @@
   <component name="ProjectId" id="1d1gSqyJHj4sCNaxC7HSpr668K6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Progetto Esame" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
@@ -93,7 +96,9 @@
       <workItem from="1592351020950" duration="84000" />
       <workItem from="1592382130810" duration="141000" />
       <workItem from="1592382342250" duration="12622000" />
-      <workItem from="1592465832118" duration="4432000" />
+      <workItem from="1592465832118" duration="9922000" />
+      <workItem from="1593497632003" duration="10585000" />
+      <workItem from="1593587385359" duration="4320000" />
     </task>
     <servers />
   </component>
@@ -120,21 +125,81 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Logic/SplitInParts.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="22" />
+          <url>file://$PROJECT_DIR$/src/Logic/GenerateCipher.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="67" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Logic/SplitInParts.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="23" />
+          <url>file://$PROJECT_DIR$/src/Logic/GenerateCipher.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Logic/SplitInParts.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="24" />
+          <url>file://$PROJECT_DIR$/src/Logic/GenerateCipher.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Logic/GenerateCipher.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Logic/GenerateCipher.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Logic/GenerateCipher.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Logic/GenerateCipher.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Logic/GenerateCipher.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Logic/GenerateCipher.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Logic/GenerateCipher.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Logic/SplitByKb.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Logic/SplitByKb.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Logic/SplitByKb.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Logic/SplitByKb.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="111" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="M" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
