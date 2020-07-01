@@ -29,15 +29,18 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
     private JLabel cryptLabel;
     private JLabel inPartsLabel;
     private JLabel cryptDimLabel;
+    private JLabel rowNumberLabel;
 
     private JButton chooseFileButton;
     private JButton addToQueueButton;
+    private JButton removeFromQueue;
 
     private JTextField inKbText;
     private JTextField cryptText;
     private JTextField inPartsText;
     private JTextField blank;
     private JTextField cryptDimText;
+    private JTextField rowNumber;
 
     JTableGui T;
 
@@ -114,8 +117,15 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
         textFieldsPanel.add(inPartsLabelAndText);
 
         addToQueueButton=new JButton("Add to queue");
+        removeFromQueue=new JButton("Remove From queue");
+        removeFromQueue.addActionListener(this);
         addToQueueButton.addActionListener(this);
+        rowNumber=new JTextField(3);
+        rowNumberLabel=new JLabel("row num");
         addToQueuePanel.add(addToQueueButton);
+        addToQueuePanel.add(removeFromQueue);
+        addToQueuePanel.add(rowNumberLabel);
+        addToQueuePanel.add(rowNumber);
 
         add(chooseFilePanel,BorderLayout.PAGE_START);
         add(checkBoxesPanel,BorderLayout.CENTER);
@@ -176,10 +186,15 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
             int returnVal=fileChooser.showOpenDialog(SplitAndMergeGui.this);
             if(returnVal==JFileChooser.APPROVE_OPTION){
                 file=fileChooser.getSelectedFile();
-
             }
-
         }
+
+        if(T.getRowsCount()!=0 & e.getSource().equals(removeFromQueue)){
+            T.removeRow(Integer.parseInt(rowNumber.getText())-1);
+            rowNumber.setText("");
+        }
+
+
     }
 
     public ArrayList<String> getFilePathListInKb(){return filePathList;}

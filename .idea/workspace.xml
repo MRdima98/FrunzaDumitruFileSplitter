@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70a1d02a-b70f-477b-9a79-1ac27a9d95f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Logic/GenerateCipher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Logic/MergeByKb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/JTableGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/JTableGui.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interface/SplitAndMergeGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/SplitAndMergeGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/StardAndStopButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/StardAndStopButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/Split.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/SplitAndCrypt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/SplitAndCrypt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/SplitByKb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/SplitByKb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/SplitInParts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/SplitInParts.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +92,7 @@
       <workItem from="1592382342250" duration="12622000" />
       <workItem from="1592465832118" duration="9922000" />
       <workItem from="1593497632003" duration="10585000" />
-      <workItem from="1593587385359" duration="4320000" />
+      <workItem from="1593587385359" duration="5361000" />
     </task>
     <servers />
   </component>

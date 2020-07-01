@@ -23,5 +23,7 @@ public class JTableGui extends JPanel {
     }
 
     public void addRow(Object[] object){model.addRow(object);}
+    public void removeRow(int index){model.removeRow(index);}
+    public int getRowsCount(){return model.getRowCount();}
 
 }
