@@ -37,16 +37,17 @@ public class SplitAndCrypt{
                     break;
                 }
                 inputStream.read(buff);
-                outputStream=new FileOutputStream(file.getName() + (j+1) + ".cryptpar");
+                outputStream=new FileOutputStream(file.getName() + ".crypt" + (j+1));
                 byte[] cipheredByte=cipher.update(buff);
                 outputStream.write(cipheredByte);
                 lastIndex =j;
             }
-            outputStream=new FileOutputStream(file.getName() + (lastIndex +2) + ".cryptpar");
+            outputStream=new FileOutputStream(file.getName() + ".crypt" + (lastIndex +2));
             byte[] lastBuff=new byte[lastPartDim];
             byte[] lastCipheredByte=cipher.update(lastBuff);
             outputStream.write(lastCipheredByte);
             inputStream.close();
+            file.delete();
         }
 
         catch (Exception e){

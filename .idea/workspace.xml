@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70a1d02a-b70f-477b-9a79-1ac27a9d95f2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Logic/MergeByParts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Logic/MergeFromCrypt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WhatsApp Image 2019-08-27 at 17.48.05.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/WhatsApp Image 2019-08-27 at 17.48.05.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WhatsApp Image 2019-08-27 at 17.48.05.jpeg.eqpar3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/original.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interface/JTableGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/JTableGui.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interface/SplitAndMergeGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/SplitAndMergeGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/StardAndStopButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/StardAndStopButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/MergeByKb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/MergeByKb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/SplitAndCrypt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/SplitAndCrypt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/SplitByKb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/SplitByKb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/SplitInParts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/SplitInParts.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +39,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1d1gSqyJHj4sCNaxC7HSpr668K6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
@@ -38,10 +55,10 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Progetto Esame" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Sperimenti" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -92,7 +109,10 @@
       <workItem from="1592382342250" duration="12622000" />
       <workItem from="1592465832118" duration="9922000" />
       <workItem from="1593497632003" duration="10585000" />
-      <workItem from="1593587385359" duration="5361000" />
+      <workItem from="1593587385359" duration="7904000" />
+      <workItem from="1593677261927" duration="5804000" />
+      <workItem from="1593763401498" duration="13734000" />
+      <workItem from="1593783156117" duration="4000" />
     </task>
     <servers />
   </component>
@@ -119,79 +139,36 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Logic/GenerateCipher.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="67" />
+          <url>file://$PROJECT_DIR$/src/Logic/MergeByParts.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="78" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Logic/GenerateCipher.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="68" />
+          <url>file://$PROJECT_DIR$/src/Logic/MergeByParts.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="80" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Logic/GenerateCipher.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="69" />
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Logic/MergeByParts.java</url>
+          <line>6</line>
+          <properties class="Logic.MergeByParts" method="mergeFile">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="77" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Logic/GenerateCipher.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="70" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Logic/GenerateCipher.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="71" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Logic/GenerateCipher.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="72" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Logic/GenerateCipher.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="73" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Logic/GenerateCipher.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="74" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Logic/GenerateCipher.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="75" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Logic/GenerateCipher.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="76" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Logic/SplitByKb.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="108" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Logic/SplitByKb.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="109" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Logic/SplitByKb.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="110" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Logic/SplitByKb.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="111" />
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Logic/MergeByParts.java</url>
+          <line>3</line>
+          <properties class="Logic.MergeByParts" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="79" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
+        <watch expression="M" language="JAVA" />
         <watch expression="M" language="JAVA" />
       </configuration>
     </watches-manager>

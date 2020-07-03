@@ -24,12 +24,14 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
     private JPanel cryptLabelAndText;
     private JPanel inPartsLabelAndText;
     private JPanel splitAndMergePanel;
+    private JPanel mergePasswordRow;
 
     private JLabel inKbLabel;
     private JLabel cryptLabel;
     private JLabel inPartsLabel;
     private JLabel cryptDimLabel;
     private JLabel rowNumberLabel;
+    private JLabel keyLabel;
 
     private JButton chooseFileButton;
     private JButton addToQueueButton;
@@ -41,6 +43,7 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
     private JTextField blank;
     private JTextField cryptDimText;
     private JTextField rowNumber;
+    private JTextField decryptKey;
 
     JTableGui T;
 
@@ -68,14 +71,13 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
         inKbLabelAndText=new JPanel(new FlowLayout(0,10,0));
         cryptLabelAndText=new JPanel(new FlowLayout(0,10,0));
         inPartsLabelAndText=new JPanel(new FlowLayout(0,13,0));
-
+        mergePasswordRow=new JPanel(new FlowLayout(0,7,0));
 
         splitCheckBox=new JCheckBox("Split");
         splitCheckBox.addActionListener(this);
         mergeCheckBox=new JCheckBox("Merge");
         mergeCheckBox.addActionListener(this);
         splitAndMergePanel.add(splitCheckBox);
-        splitAndMergePanel.add(mergeCheckBox);
 
         inKbCheckBox=new JCheckBox("Split by kb");
         inKbCheckBox.addActionListener(this);
@@ -84,6 +86,7 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
         checkBoxesPanel.add(inKbCheckBox);
         checkBoxesPanel.add(cryptCheckBox);
         checkBoxesPanel.add(inPartsCheckBox);
+        checkBoxesPanel.add(mergeCheckBox);
 
         chooseFileButton=new JButton("Choose file");
         chooseFileButton.addActionListener(this);
@@ -112,15 +115,21 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
         inPartsLabel=new JLabel("n");
         inPartsLabelAndText.add(inPartsLabel);
         inPartsLabelAndText.add(inPartsText);
+        keyLabel =new JLabel("key");
+        decryptKey=new JTextField(7);
+        mergePasswordRow.add(keyLabel);
+        mergePasswordRow.add(decryptKey);
         textFieldsPanel.add(inKbLabelAndText);
         textFieldsPanel.add(cryptLabelAndText);
         textFieldsPanel.add(inPartsLabelAndText);
+        textFieldsPanel.add(mergePasswordRow);
 
         addToQueueButton=new JButton("Add to queue");
         removeFromQueue=new JButton("Remove From queue");
         removeFromQueue.addActionListener(this);
         addToQueueButton.addActionListener(this);
         rowNumber=new JTextField(3);
+        rowNumber.addActionListener(this);
         rowNumberLabel=new JLabel("row num");
         addToQueuePanel.add(addToQueueButton);
         addToQueuePanel.add(removeFromQueue);
@@ -152,7 +161,7 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
             filePathList.add(file.getAbsoluteFile().toString());
             filePathList.add(inKbText.getText());
             inKbText.setText("");
-
+            inKbCheckBox.setSelected(false);
         }
 
 
@@ -163,6 +172,8 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
             filePathList.add(cryptText.getText());
             filePathList.add(cryptDimText.getText());
             cryptText.setText("");
+            cryptDimText.setText("");
+            cryptCheckBox.setSelected(false);
         }
 
 
@@ -172,6 +183,7 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
             filePathList.add(file.getAbsoluteFile().toString());
             filePathList.add(inPartsText.getText());
             inPartsText.setText("");
+            inPartsCheckBox.setSelected(false);
         }
 
 
@@ -179,7 +191,13 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
             T.addRow(new Object[]{"Merge",file.length()/1024,file.getAbsolutePath(),""});
             filePathList.add("Merge");
             filePathList.add(file.getAbsoluteFile().toString());
-        }
+            String tmp=decryptKey.getText();
+            if(tmp.isEmpty()){
+            }
+            else filePathList.add(tmp);
+            decryptKey.setText("");
+            }
+
 
 
         if(e.getSource().equals(chooseFileButton)){

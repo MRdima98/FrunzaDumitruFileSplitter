@@ -29,14 +29,17 @@ public class SplitInParts{
             inputStream=new FileInputStream(file);
             for(int i=0;i<fileChunks-1;i++){
                 inputStream.read(buff);
-                outputStream=new FileOutputStream(file.getName() + (i+1) + ".InParts");
+                outputStream=new FileOutputStream(file.getName() + ".inparts" + (i+1));
                 outputStream.write(buff);
                 lastIndex=i+2;
             }
-
-            outputStream=new FileOutputStream(file.getName() + lastIndex + ".InParts");
-            outputStream.write(new byte[lastPartDim+partsDim]);
+            outputStream=new FileOutputStream(file.getName() + ".inparts" + lastIndex);
+            byte[] lastBuff=new byte[lastPartDim+partsDim];
+            inputStream.read(lastBuff);
+            outputStream.write(lastBuff);
             inputStream.close();
+            outputStream.close();
+            file.delete();
         }
         catch (Exception e){
 

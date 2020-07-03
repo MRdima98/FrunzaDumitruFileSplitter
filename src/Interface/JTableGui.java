@@ -15,7 +15,6 @@ public class JTableGui extends JPanel {
     public JTableGui(){
 
         model=new DefaultTableModel(new Object[]{"Type","Dimension","Path","Progress"},0);
-
         table=new JTable(model);
         scrollPane=new JScrollPane(table);
         scrollPane.setPreferredSize(new Dimension(500,150));

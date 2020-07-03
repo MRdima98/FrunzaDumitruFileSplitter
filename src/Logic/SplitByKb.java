@@ -47,6 +47,7 @@ public class SplitByKb{
             outputStream.write(lastBuff);
             inputStream.close();
             outputStream.close();
+            file.delete();
         }
 
         catch (Exception e){
