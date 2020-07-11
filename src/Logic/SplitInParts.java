@@ -1,8 +1,10 @@
 package Logic;
 
+import Interface.JTableGui;
+
 import java.io.*;
 
-public class SplitInParts{
+public class SplitInParts implements Runnable{
 
 
     private String path;
@@ -13,38 +15,51 @@ public class SplitInParts{
     private FileInputStream inputStream;
     private FileOutputStream outputStream;
     private File file;
+    JTableGui jTableGui;
+    private int rowCount;
+    private int percentage;
 
-    public SplitInParts(String path,int fileChunks){
-
+    public SplitInParts(String path,int fileChunks,int rowCount,JTableGui jTableGui){
+        this.jTableGui=jTableGui;
         this.path=path;
         this.fileChunks=fileChunks;
+        this.rowCount=rowCount;
     }
 
-    public void splitFileInParts(){
+    public void run(){
         try {
             file=new File(path);
             partsDim=Math.toIntExact(file.length()/fileChunks);
             lastPartDim=Math.toIntExact(file.length()%fileChunks);
             byte[] buff=new byte[partsDim];
             inputStream=new FileInputStream(file);
-            for(int i=0;i<fileChunks-1;i++){
+            for(int j=1;j<=fileChunks-1;j++){
                 inputStream.read(buff);
-                outputStream=new FileOutputStream(file.getName() + ".inparts" + (i+1));
+                outputStream=new FileOutputStream(file.getName() + j + ".inparts");
                 outputStream.write(buff);
-                lastIndex=i+2;
+                lastIndex=j+1;
+                outputStream.close();
+                try{
+                    Thread.sleep(300);
+                }
+                catch (InterruptedException e){
+                    e.printStackTrace();
+                }
+                percentage=(j*100)/fileChunks;
+                jTableGui.setValue(percentage + "% ",rowCount);
             }
-            outputStream=new FileOutputStream(file.getName() + ".inparts" + lastIndex);
+            outputStream=new FileOutputStream(file.getName() + lastIndex + ".inparts");
             byte[] lastBuff=new byte[lastPartDim+partsDim];
             inputStream.read(lastBuff);
             outputStream.write(lastBuff);
             inputStream.close();
             outputStream.close();
-            file.delete();
+            jTableGui.setValue("100%",rowCount);
         }
         catch (Exception e){
 
         }
-    }
+    };
 
 
 }

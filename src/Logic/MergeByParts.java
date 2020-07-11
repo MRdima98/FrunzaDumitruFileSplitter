@@ -1,11 +1,18 @@
 package Logic;
 
-public class MergeByParts extends MergeByKb{
-    public MergeByParts() {
+import Interface.JTableGui;
+
+/**
+ * This is MergeByParts class, it merges a file splitted in parts. Since the are very similar classes
+ * it inherits from {@link MergeByKb} and uses the same methods, the only difference is the extension
+ */
+public class MergeByParts extends MergeByKb implements Runnable{
+    public MergeByParts(String fileName, String path, JTableGui tableGui,String extension,int numSplits,int rowCount) {
+        super(fileName,path,tableGui,extension,numSplits,rowCount);
     }
 
-    public void mergeFile(String fileName,String path,String genericPath){
-        super.mergeFile(fileName,path,genericPath);
+    public void run(){
+        super.run();
     }
 
 }

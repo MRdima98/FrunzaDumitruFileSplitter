@@ -19,10 +19,20 @@ public class JTableGui extends JPanel {
         scrollPane=new JScrollPane(table);
         scrollPane.setPreferredSize(new Dimension(500,150));
         add(scrollPane);
+
     }
 
-    public void addRow(Object[] object){model.addRow(object);}
-    public void removeRow(int index){model.removeRow(index);}
+    public void addRow(Object[] object){
+        model.addRow(object);
+        model.fireTableStructureChanged();
+    }
+    public void removeRow(int index){
+    model.removeRow(index);
+    model.fireTableStructureChanged();
+    }
     public int getRowsCount(){return model.getRowCount();}
-
+    public void setValue(String percent,int rowCount){
+        table.getModel().setValueAt(percent,rowCount,3);
+        model.fireTableDataChanged();
+    }
 }

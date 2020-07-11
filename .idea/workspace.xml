@@ -1,20 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="FrunzaDumitruFileSplitter:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="70a1d02a-b70f-477b-9a79-1ac27a9d95f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Logic/MergeByParts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Logic/MergeFromCrypt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsApp Image 2019-08-27 at 17.48.05.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/WhatsApp Image 2019-08-27 at 17.48.05.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsApp Image 2019-08-27 at 17.48.05.jpeg.eqpar3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/original.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrunzaDumitruFileSplitter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FrunzaDumitruFileSplitter.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Interface/FinalGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Interface/FinalGui.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/FinalGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/FinalGui.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interface/JTableGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/JTableGui.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interface/SplitAndMergeGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/SplitAndMergeGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/StardAndStopButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/StardAndStopButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/StardAndStopButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/StartButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/GenerateCipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/GenerateCipher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Logic/MergeByKb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/MergeByKb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/MergeByParts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/MergeByParts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/MergeFromCrypt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/MergeFromCrypt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Logic/SplitAndCrypt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/SplitAndCrypt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Logic/SplitByKb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/SplitByKb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Logic/SplitInParts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/SplitInParts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frame.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +66,9 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Sperimenti" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.1997319" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
@@ -113,6 +125,14 @@
       <workItem from="1593677261927" duration="5804000" />
       <workItem from="1593763401498" duration="13734000" />
       <workItem from="1593783156117" duration="4000" />
+      <workItem from="1594108414854" duration="6206000" />
+      <workItem from="1594114639088" duration="3000" />
+      <workItem from="1594114729209" duration="68000" />
+      <workItem from="1594116135276" duration="1258000" />
+      <workItem from="1594197875347" duration="9967000" />
+      <workItem from="1594284336270" duration="4579000" />
+      <workItem from="1594380320865" duration="6498000" />
+      <workItem from="1594453945509" duration="17327000" />
     </task>
     <servers />
   </component>
@@ -136,40 +156,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Logic/MergeByParts.java</url>
-          <line>7</line>
-          <option name="timeStamp" value="78" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Logic/MergeByParts.java</url>
-          <line>4</line>
-          <option name="timeStamp" value="80" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Logic/MergeByParts.java</url>
-          <line>6</line>
-          <properties class="Logic.MergeByParts" method="mergeFile">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="77" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Logic/MergeByParts.java</url>
-          <line>3</line>
-          <properties class="Logic.MergeByParts" method="&lt;init&gt;">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="79" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="M" language="JAVA" />
         <watch expression="M" language="JAVA" />
+        <watch expression="e (slot_3)" />
       </configuration>
     </watches-manager>
   </component>

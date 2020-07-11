@@ -7,7 +7,9 @@ import java.awt.event.ActionListener;
 import java.io.File;
 import java.util.ArrayList;
 
-
+/**
+ * This is SplitAndMergeGui, it contains all options to split or merge a file
+ */
 public class SplitAndMergeGui extends JPanel implements ActionListener {
 
     private JCheckBox splitCheckBox;
@@ -44,17 +46,21 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
     private JTextField cryptDimText;
     private JTextField rowNumber;
     private JTextField decryptKey;
-
-    JTableGui T;
+    JTableGui tableGui;
 
     private JFileChooser fileChooser;
     private File file;
     private static ArrayList<String> filePathList;
+    private int rowCount=0;
 
+    /**
+     * This is SplitAndMergeGui constructor, it initialises every button and checkbox necessary to merge or split a file
+     * @param T is the table in {@link JTableGui}, passing it as parameter ensures the gui gets updated
+     */
     public SplitAndMergeGui(JTableGui T){
 
         this.setLayout(new BorderLayout());
-        this.T=T;
+        this.tableGui =T;
         filePathList =new ArrayList<String>();
 
         fileChooser=new JFileChooser();
@@ -141,8 +147,13 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
         add(textFieldsPanel,BorderLayout.LINE_END);
         add(addToQueuePanel,BorderLayout.PAGE_END);
         add(splitAndMergePanel,BorderLayout.LINE_START);
+
     }
 
+    /**
+     * This is the actionPerformed class, it performs an action upon clicking addToQueueButton or removeFromQueue. The action performed depends of which checkboxes are selected
+     * @param e is the event
+     */
     @Override
     public void actionPerformed(ActionEvent e) {
 
@@ -156,21 +167,25 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
             splitCheckBox.setEnabled(true);
 
         if(splitCheckBox.isSelected() & e.getSource().equals(addToQueueButton) & inKbCheckBox.isSelected()){
-            T.addRow(new Object[]{"Split by kb",file.length()/1024 + " kb",file.getAbsolutePath(),""});
+            tableGui.addRow(new Object[]{"Split by kb",file.length()/1024 + " kb",file.getAbsolutePath(),""});
             filePathList.add("SplitByKb");
             filePathList.add(file.getAbsoluteFile().toString());
             filePathList.add(inKbText.getText());
+            filePathList.add(Integer.toString(rowCount));
+            rowCount++;
             inKbText.setText("");
             inKbCheckBox.setSelected(false);
         }
 
 
         if(splitCheckBox.isSelected() & cryptCheckBox.isSelected() & e.getSource().equals(addToQueueButton)){
-            T.addRow(new Object[]{"Split and crypt",file.length()/1024 + " kb",file.getAbsolutePath(),""});
+            tableGui.addRow(new Object[]{"Split and crypt",file.length()/1024 + " kb",file.getAbsolutePath(),""});
             filePathList.add("SplitAndCrypt");
             filePathList.add(file.getAbsoluteFile().toString());
             filePathList.add(cryptText.getText());
             filePathList.add(cryptDimText.getText());
+            filePathList.add(Integer.toString(rowCount));
+            rowCount++;
             cryptText.setText("");
             cryptDimText.setText("");
             cryptCheckBox.setSelected(false);
@@ -178,27 +193,28 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
 
 
         if(splitCheckBox.isSelected() & inPartsCheckBox.isSelected() & e.getSource().equals(addToQueueButton)){
-            T.addRow(new Object[]{"Split in parts",file.length()/1024 + " kb",file.getAbsolutePath()});
+            tableGui.addRow(new Object[]{"Split in parts",file.length()/1024 + " kb",file.getAbsolutePath()});
             filePathList.add("SplitInParts");
             filePathList.add(file.getAbsoluteFile().toString());
             filePathList.add(inPartsText.getText());
+            filePathList.add(Integer.toString(rowCount));
             inPartsText.setText("");
             inPartsCheckBox.setSelected(false);
         }
 
 
         if(mergeCheckBox.isSelected() & e.getSource().equals(addToQueueButton)){
-            T.addRow(new Object[]{"Merge",file.length()/1024,file.getAbsolutePath(),""});
+            tableGui.addRow(new Object[]{"Merge",file.length()/1024,file.getAbsolutePath(),""});
             filePathList.add("Merge");
             filePathList.add(file.getAbsoluteFile().toString());
+            filePathList.add(Integer.toString(rowCount));
+            rowCount++;
             String tmp=decryptKey.getText();
             if(tmp.isEmpty()){
             }
             else filePathList.add(tmp);
             decryptKey.setText("");
-            }
-
-
+        }
 
         if(e.getSource().equals(chooseFileButton)){
             int returnVal=fileChooser.showOpenDialog(SplitAndMergeGui.this);
@@ -207,13 +223,15 @@ public class SplitAndMergeGui extends JPanel implements ActionListener {
             }
         }
 
-        if(T.getRowsCount()!=0 & e.getSource().equals(removeFromQueue)){
-            T.removeRow(Integer.parseInt(rowNumber.getText())-1);
+        if(tableGui.getRowsCount()!=0 & e.getSource().equals(removeFromQueue)){
+            tableGui.removeRow(Integer.parseInt(rowNumber.getText())-1);
             rowNumber.setText("");
+            rowCount--;
         }
-
-
     }
 
-    public ArrayList<String> getFilePathListInKb(){return filePathList;}
+    /**
+     * @return  getFilePathList which is an array list containing the file path, file dimension, his row in the Jtable and (if we are encrypting or decrypting) the password
+     */
+    public ArrayList<String> getFilePathList(){return filePathList;}
 }

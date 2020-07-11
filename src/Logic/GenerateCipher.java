@@ -13,12 +13,19 @@ import java.security.NoSuchAlgorithmException;
 import java.security.spec.InvalidKeySpecException;
 import java.security.spec.KeySpec;
 
+/**
+ * This is GenerateCipher a class that generates the crypt and decrypt cipher
+ */
 public class GenerateCipher {
-
     private Cipher cipher;
     private byte[] salt1;
     private byte[] salt2;
 
+    /**
+     * This is GenerateCipher the class constructor, it generates the cipher
+     * @param password the input password to generate the cipher
+     * @param crypt a boolean used to know if we are encrypting or decrypting
+     */
     public GenerateCipher (String password, boolean crypt){
         try{
             this.cipher=makeCipher(password,crypt);
@@ -28,30 +35,38 @@ public class GenerateCipher {
         }
     }
 
-
+    /**
+     * This is generateSalts a method that generates my salts
+     * @param password the input password used to generate the salts
+     */
     public void generateSalts(String password){
         byte[] pass_bytes=password.getBytes();
-        int l=pass_bytes.length;
         salt1=new byte[8];
-        for(int i=0;i<l;i++){
+        for(int i=0;i<pass_bytes.length;i++){
             salt1[i]=pass_bytes[i];
         }
-        if(l<8){
-            for(int i=l; i<8; i++){
+        if(pass_bytes.length<8){
+            for(int i=pass_bytes.length; i<8; i++){
                 salt1[i]=(byte) 0x00;
             }
         }
         salt2=new byte[16];
-        for(int i=0; i<l; i++){
+        for(int i=0; i<pass_bytes.length; i++){
             salt2[i]=pass_bytes[i];
         }
-        if(l<16){
-            for(int i=l; i<16; i++){
+        if(pass_bytes.length<16){
+            for(int i=pass_bytes.length; i<16; i++){
                 salt2[i]=(byte) 0x00;
             }
         }
     }
 
+    /**
+     * This is the makeCipher method, it generates and returns the cipher
+     * @param password the input password used to generate the cipher
+     * @param crypt boolean used to recognize if we are encrypting or decrypting
+     * @return returns
+     */
     public Cipher makeCipher(String password, boolean crypt) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, InvalidAlgorithmParameterException, InvalidKeySpecException {
         generateSalts(password);
         KeySpec keySpec=new PBEKeySpec(password.toCharArray(),salt1,65535,256);
@@ -65,9 +80,12 @@ public class GenerateCipher {
         else
             tmpCipher.init(Cipher.DECRYPT_MODE,aesKey,iv);
         return  tmpCipher;
-
     }
 
+    /**
+     * This class returns the cipher
+     * @return the cipher
+     */
     public  Cipher getCipher(){
         return cipher;
     }
