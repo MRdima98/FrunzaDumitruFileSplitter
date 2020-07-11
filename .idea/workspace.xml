@@ -7,23 +7,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70a1d02a-b70f-477b-9a79-1ac27a9d95f2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrunzaDumitruFileSplitter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FrunzaDumitruFileSplitter.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Interface/FinalGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FrunzaDumitruFileSplitter/Interface/FinalGui.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/FinalGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/FinalGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/JTableGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/JTableGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/SplitAndMergeGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/SplitAndMergeGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/StardAndStopButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/StartButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/GenerateCipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/GenerateCipher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/MergeByKb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/MergeByKb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/MergeByParts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/MergeByParts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/MergeFromCrypt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/MergeFromCrypt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/SplitAndCrypt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/SplitAndCrypt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/SplitByKb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/SplitByKb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/SplitInParts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/SplitInParts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/Interface/FinalGui.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/Interface/JTableGui.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/Interface/SplitAndMergeGui.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/Interface/StardAndStopButton.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/Interface/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/Interface/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/Interface/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/Logic/GenerateCipher.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/Logic/MergeByKb.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/Logic/MergeByParts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/Logic/MergeFromCrypt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/Logic/SplitAndCrypt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/Logic/SplitByKb.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/Logic/SplitInParts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/Logic/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/Logic/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/Logic/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/allclasses-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/allclasses-noframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/constant-values.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/deprecated-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/index-files/index-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/index-files/index-10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/index-files/index-11.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/index-files/index-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/index-files/index-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/index-files/index-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/index-files/index-5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/index-files/index-6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/index-files/index-7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/index-files/index-8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/index-files/index-9.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/overview-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/overview-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/package-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/serialized-form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSplitterDocumentation/stylesheet.css" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +160,7 @@
       <workItem from="1594197875347" duration="9967000" />
       <workItem from="1594284336270" duration="4579000" />
       <workItem from="1594380320865" duration="6498000" />
-      <workItem from="1594453945509" duration="17327000" />
+      <workItem from="1594453945509" duration="17768000" />
     </task>
     <servers />
   </component>
