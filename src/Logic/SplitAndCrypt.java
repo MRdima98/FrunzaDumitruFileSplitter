@@ -56,7 +56,7 @@ public class SplitAndCrypt implements Runnable{
             inputStream = new FileInputStream(file);
             for(int j=1;j<=fileChunks;j++){
                 inputStream.read(buff);
-                outputStream=new FileOutputStream(file.getName()+ j + ".crypt" );
+                outputStream=new FileOutputStream(file.getName() + j + ".crypt" );
                 byte[] cipheredByte=cipher.update(buff);
                 outputStream.write(cipheredByte);
                 outputStream.close();
@@ -75,6 +75,7 @@ public class SplitAndCrypt implements Runnable{
             byte[] lastCipheredByte=cipher.update(lastBuff);
             outputStream.write(lastCipheredByte);
             inputStream.close();
+            outputStream.close();
         }
 
         catch (Exception e){
